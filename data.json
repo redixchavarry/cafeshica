@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "CafeShica",
+    "tagline": "Del grano a tu taza. Café artesanal tostado con amor y frutos secos premium seleccionados para ti.",
+    "whatsapp": "18622971065",
+    "email": "info@cafeshica.com"
+  },
+  "about": {
+    "title": "Nuestra Historia",
+    "image": "https://images.unsplash.com/photo-1524350876685-274059332603?w=800",
+    "paragraph1": "En CafeShica creemos que cada taza de café cuenta una historia. Seleccionamos los mejores granos de café de altura y los tostamos artesanalmente para preservar su aroma y sabor único.",
+    "paragraph2": "Además, complementamos nuestra oferta con frutos secos premium: almendras, nueces y maní cuidadosamente seleccionados para acompañar tu momento de café perfecto."
+  },
+  "products": [
+    {
+      "name": "Café en Grano",
+      "description": "Granos de café de altura, tostado artesanal. Aroma intenso y sabor equilibrado. Presentación 500g.",
+      "price": "$12.99",
+      "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600"
+    },
+    {
+      "name": "Almendras Premium",
+      "description": "Almendras seleccionadas, tostadas y sin sal. Perfectas para acompañar tu café. Presentación 250g.",
+      "price": "$8.99",
+      "image": "https://images.unsplash.com/photo-1508061253366-f7da158b6d4b?w=600"
+    },
+    {
+      "name": "Nueces Frescas",
+      "description": "Nueces de primera calidad, frescas y crujientes. Ricas en omega 3. Presentación 250g.",
+      "price": "$9.99",
+      "image": "https://images.unsplash.com/photo-1575481636764-7f236580024a?w=600"
+    },
+    {
+      "name": "Maní Tostado",
+      "description": "Maní seleccionado, tostado a la perfección. El acompañante ideal. Presentación 500g.",
+      "price": "$6.99",
+      "image": "https://images.unsplash.com/photo-1567892320421-1c657571e4a4?w=600"
+    }
+  ]
+}
