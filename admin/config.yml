@@ -1,68 +1,44 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main  # ⚠️ IMPORTANTE: Si tu rama principal en GitHub se llama "master", cambia "main" por "master"
 
+# Carpetas para manejar las imágenes que subas desde el CMS
 media_folder: "uploads"
 public_folder: "/uploads"
 
 collections:
   - name: "configuracion"
-    label: "Configuracion General"
+    label: "⚙️ Configuración General"
     files:
       - name: "site"
         label: "Datos del Sitio"
-        file: "data.json"
-        description: "Edita los datos generales de tu pagina"
+        file: "data.json" # ⚠️ IMPORTANTE: Esto asume que data.json está en la RAÍZ de tu repo. Si está en una carpeta, pon "carpeta/data.json"
+        description: "Edita los datos generales de tu página web"
         fields:
-          - label: "Informacion del Sitio"
+          - label: "Información del Sitio"
             name: "site"
             widget: "object"
             fields:
-              - label: "Titulo"
-                name: "title"
-                widget: "string"
-                default: "CafeShica"
-              - label: "Eslogan Hero"
-                name: "tagline"
-                widget: "text"
-              - label: "Numero WhatsApp"
-                name: "whatsapp"
-                widget: "string"
-              - label: "Email de contacto"
-                name: "email"
-                widget: "string"
+              - { label: "Título", name: "title", widget: "string", default: "CafeShica" }
+              - { label: "Eslogan (Hero)", name: "tagline", widget: "text" }
+              - { label: "Número WhatsApp (con código país, sin +)", name: "whatsapp", widget: "string" }
+              - { label: "Email de contacto", name: "email", widget: "string" }
           
-          - label: "Seccion Nosotros"
+          - label: "Sección Nosotros"
             name: "about"
             widget: "object"
             fields:
-              - label: "Titulo"
-                name: "title"
-                widget: "string"
-              - label: "Imagen"
-                name: "image"
-                widget: "image"
-              - label: "Parrafo 1"
-                name: "paragraph1"
-                widget: "text"
-              - label: "Parrafo 2"
-                name: "paragraph2"
-                widget: "text"
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Imagen", name: "image", widget: "image" }
+              - { label: "Párrafo 1", name: "paragraph1", widget: "text" }
+              - { label: "Párrafo 2", name: "paragraph2", widget: "text" }
           
           - label: "Productos"
             name: "products"
             widget: "list"
             summary: "{{fields.name}} - {{fields.price}}"
             fields:
-              - label: "Nombre del producto"
-                name: "name"
-                widget: "string"
-              - label: "Descripcion"
-                name: "description"
-                widget: "text"
-              - label: "Precio"
-                name: "price"
-                widget: "string"
-              - label: "Imagen del producto"
-                name: "image"
-                widget: "image"
+              - { label: "Nombre del producto", name: "name", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+              - { label: "Precio", name: "price", widget: "string" }
+              - { label: "Imagen del producto", name: "image", widget: "image" }
